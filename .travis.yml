@@ -1,0 +1,16 @@
+os:
+  - linux
+language: node_js
+node_js:
+  - "9"
+cache:
+  yarn: true
+  directories:
+    - node_modules
+install:
+  - yarn install
+script:
+  - yarn run test
+before_deploy:
+  - yarn install
+
