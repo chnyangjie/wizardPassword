@@ -1,0 +1,29 @@
+{
+  "name": "wizardpassword",
+  "version": "1.0.0",
+  "description": "password strength test library",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "chnyangjie/wizardPassword"
+  },
+  "author": {
+    "name": "chnyangjie",
+    "email": "chnyangjie@163.com",
+    "url": ""
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chnyangjie/wizardPassword/issues"
+  },
+  "homepage": "https://github.com/chnyangjie/wizardPassword#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.19.1",
+    "jest": "^22.4.3"
+  }
+}
