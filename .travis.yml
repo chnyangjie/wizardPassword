@@ -1,16 +1,23 @@
 os:
-  - linux
+- linux
 language: node_js
 node_js:
-  - "9"
+- '9'
 cache:
   yarn: true
   directories:
-    - node_modules
+  - node_modules
 install:
-  - yarn install
+- yarn install
 script:
-  - yarn run test
+- yarn run test
 before_deploy:
-  - yarn install
-
+- yarn install
+deploy:
+  provider: npm
+  email: chnyangjie@163.com
+  api_key:
+    secure: yHiLCVOTnkEP54tWSTWUeuMRkFmjPQlBelV6GzchOziLgut5BOOuJtWs2rCkrFbCfzr0pmOTQzeWhzA1P3tAwWPMXSDjyrYwQpVlwcT9xoRw/gHYCRpzkiA6szCNWON1fuJe/rzvsqmZFmr8Flgwrne0WQA5w4nUYHNUYPz+MauZY6aNvA/wOJW54YvO/sEuji/YB+1DPHG3fsMpCdc2VJ1zP4qE6N6eT/B/qFA5jIVZFlSrxdusMZVAXQAleRZJFq3Qwq+M8vcWdsAcnzgdkP/uqHReB3QMFfj6Cu3ROaCuQ6XXRB4lHhfc/Dz6ruov/IZhxB5yFBxpJs8sSQC1EnGEb5JtqkxJmwlXQbhCVrgGxHJl1ykVSUVXkQgQvIrnOgN5DnByRYtjRbPEA47ntMGPjozxequPKQvvrSSirMmVMdDxpI78RW3QIRbX7y6wE0S8A0HZYZCqTVp2xfNERVfPA6vcBIo5asNBfVplQ6J7A3ruRzianwZ5gF+QLW0rbqHRUuFm6V6dAgsIlUaG1QjG6TDFEyiQGzhUAkt21HeQ7B8MKRPZcm2b36MmquNzCUnaYJTXp1Y/Bx6cVv+Mrn8shrKiMw7egsGNgr2yqgY64Z9iF7xdb3h4RVkY28qeybDkLp2IlPDs6q+uN3AouSkUBnLjl2fee2rfQTAyoCg=
+  on:
+    tags: true
+    repo: chnyangjie/wizardPassword
